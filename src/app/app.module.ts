@@ -6,17 +6,23 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
 import { FooterTwoComponent } from './footer-two/footer-two.component';
+import { VideoEmbedComponent } from './video-embed/video-embed.component';
+import { YouTubePlayerModule } from '@angular/youtube-player';
+import { VisionComponent } from './vision/vision.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     FooterComponent,
-    FooterTwoComponent
+    FooterTwoComponent,
+    VideoEmbedComponent,
+    VisionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    YouTubePlayerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
