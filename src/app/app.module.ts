@@ -9,6 +9,8 @@ import { FooterTwoComponent } from './footer-two/footer-two.component';
 import { VideoEmbedComponent } from './video-embed/video-embed.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
 import { VisionComponent } from './vision/vision.component';
+import { FeaturedComponent } from './featured/featured.component';
+import { CardsComponent } from './cards/cards.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { VisionComponent } from './vision/vision.component';
     FooterComponent,
     FooterTwoComponent,
     VideoEmbedComponent,
-    VisionComponent
+    VisionComponent,
+    FeaturedComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,
