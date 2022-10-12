@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -16,6 +17,8 @@ import { SupportComponent } from './support/support.component';
 import { CommunityComponent } from './community/community.component';
 import { CareersComponent } from './careers/careers.component';
 import { NewsComponent } from './news/news.component';
+import { MyInfoComponent } from './my-info/my-info.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -31,12 +34,15 @@ import { NewsComponent } from './news/news.component';
     SupportComponent,
     CommunityComponent,
     CareersComponent,
-    NewsComponent
+    NewsComponent,
+    MyInfoComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    YouTubePlayerModule
+    YouTubePlayerModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
