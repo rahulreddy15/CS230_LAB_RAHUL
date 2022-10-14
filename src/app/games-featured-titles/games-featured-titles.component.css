@@ -1,0 +1,78 @@
+#games-overview-featured-titles {
+    color: #FFF;
+    padding: 50px 0;
+    background-position: top center;
+    margin-top: -7px;
+}
+
+.container .row {
+    margin-left: -0.75rem;
+    margin-right: -0.75rem;
+}
+
+.row {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 601px){
+    .row .col.m4 {
+        width: 33.3333333333%;
+    }
+}
+
+.card, .card-panel {
+    margin: 0.5rem 0 1rem;
+    background-color: #fff;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+}
+.card, .card.large, .card.medium, .card.small {
+    position: relative;
+}
+.btn, .btn-custom, .btn-floating, .btn-large, .button, .card, .card-panel, .collapsible, .dropdown-content, .side-nav, .toast, .z-depth-1, button, nav {
+    box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 1px 5px 0 rgb(0 0 0 / 12%), 0 3px 1px -2px rgb(0 0 0 / 20%);
+    border: none;
+    background-color: transparent;
+}
+
+.card-body{
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 0 0 2px 2px;
+}
+.card-title {
+    display: block;
+    line-height: 32px;
+    margin-bottom: 8px;
+    font-size: 24px;
+    font-weight: 300;
+}
+.card-content button {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    background-color: #48707A;
+    letter-spacing: .5px;
+    transition: .2s ease-out;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 36px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 2rem;
+    text-transform: uppercase;
+}
+
+.card-image img{
+    width: 100%;
+}
+.card-content{
+    background-color: #fff;
+    padding: 24px;
+    border-radius: 0 0 2px 2px;
+    height: 190px;
+}

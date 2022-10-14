@@ -19,6 +19,10 @@ import { CareersComponent } from './careers/careers.component';
 import { NewsComponent } from './news/news.component';
 import { MyInfoComponent } from './my-info/my-info.component';
 import { HomeComponent } from './home/home.component';
+import { GamesFeaturedTitlesComponent } from './games-featured-titles/games-featured-titles.component';
+import { GamesCurrentTitlesComponent } from './games-current-titles/games-current-titles.component';
+import { GamesNewsComponent } from './games-news/games-news.component';
+import { GamesLegacyComponent } from './games-legacy/games-legacy.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,11 @@ import { HomeComponent } from './home/home.component';
     CareersComponent,
     NewsComponent,
     MyInfoComponent,
-    HomeComponent
+    HomeComponent,
+    GamesFeaturedTitlesComponent,
+    GamesCurrentTitlesComponent,
+    GamesNewsComponent,
+    GamesLegacyComponent
   ],
   imports: [
     BrowserModule,

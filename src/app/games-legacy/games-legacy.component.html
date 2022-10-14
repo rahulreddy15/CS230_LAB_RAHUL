@@ -1,0 +1,25 @@
+<div id="games-overview-other-games">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h2>Legacy Games</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col m3 s12 center-align" *ngFor="let x of titles">
+                <a class="game-series">
+                    <img src={{x.img}} border="0" alt={{x.altName}} class="full-width"></a>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <div class="legacy-carousel">
+                <div *ngFor="let y of titles2">
+                    <a><img src={{y.img2}} border="0"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
