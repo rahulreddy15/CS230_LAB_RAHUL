@@ -6,23 +6,21 @@
     background-position: top center;
   "
 >
-  <div class="container">
+  <div class="container featured-container">
     <div class="row">
-      <div class="col s12" style="color: #fff">
+      <div class="col s12">
         <h2>Games</h2>
       </div>
     </div>
-    <div class="card-deck" >
-      <div class="card-columns" style="display: flex;">
-      <div *ngFor="let x of featured">
-        <app-cards
+    <div class="row" >
+      <div *ngFor="let x of featured" class="col m6 s12">
+        <app-cards-component
           img="{{ x.img }}"
           message="{{ x.message }}"
           name="{{ x.name }}"
         >
           loading...
-        </app-cards>
-      </div>
+        </app-cards-component>
       </div>
     </div>
   </div>

@@ -1,0 +1,40 @@
+.featured-container .col{
+    flex: 1 0 50%;
+}
+.container .row {
+margin-left: -0.75rem;
+margin-right: -0.75rem;
+}
+
+.row {
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 20px;
+}
+
+
+@media only screen and (min-width: 601px){
+.row .col.m6 {
+    width: 50%;
+}
+}
+
+.row .col.l1, .row .col.l10, .row .col.l11, .row .col.l12, .row .col.l2, .row .col.l3, .row .col.l4, .row .col.l5, .row .col.l6, .row .col.l7, .row .col.l8, .row .col.l9, .row .col.m1, .row .col.m10, .row .col.m11, .row .col.m12, .row .col.m2, .row .col.m3, .row .col.m4, .row .col.m5, .row .col.m6, .row .col.m7, .row .col.m8, .row .col.m9, .row .col.s1, .row .col.s10, .row .col.s11, .row .col.s12, .row .col.s2, .row .col.s3, .row .col.s4, .row .col.s5, .row .col.s6, .row .col.s7, .row .col.s8, .row .col.s9, .row .col.xl1, .row .col.xl10, .row .col.xl11, .row .col.xl12, .row .col.xl2, .row .col.xl3, .row .col.xl4, .row .col.xl5, .row .col.xl6, .row .col.xl7, .row .col.xl8, .row .col.xl9 {
+margin-left: auto;
+left: auto;
+right: auto;
+}
+
+.row .col {
+float: left;
+padding: 0 0.75rem;
+min-height: 1px;
+}
+
+#home-featured-titles {
+background-color: #000;
+padding: 50px 0;
+background-size: cover;
+background-position: center center;
+margin-top: -7px;
+}
