@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CareersComponent implements OnInit {
 
+  videoId = 'tlgCHyBbQBM'
+
   constructor() { }
 
   ngOnInit(): void {

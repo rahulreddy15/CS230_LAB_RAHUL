@@ -24,6 +24,15 @@ import { GamesCurrentTitlesComponent } from './games-current-titles/games-curren
 import { GamesNewsComponent } from './games-news/games-news.component';
 import { GamesLegacyComponent } from './games-legacy/games-legacy.component';
 import { CardsComponentComponent } from './cards-component/cards-component.component';
+import { CareersOpportunitiesComponent } from './careers-opportunities/careers-opportunities.component';
+import { CareersLifeAtComponent } from './careers-life-at/careers-life-at.component';
+import { CareersBenefitsComponent } from './careers-benefits/careers-benefits.component';
+import { CareersAwardsComponent } from './careers-awards/careers-awards.component';
+import { CareersContactComponent } from './careers-contact/careers-contact.component';
+import { NewsMainContentComponent } from './news-main-content/news-main-content.component';
+import { NewsFeaturedArticleComponent } from './news-featured-article/news-featured-article.component';
+import { NewsRecentComponent } from './news-recent/news-recent.component';
+import { NewsCategoriesComponent } from './news-categories/news-categories.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +55,16 @@ import { CardsComponentComponent } from './cards-component/cards-component.compo
     GamesCurrentTitlesComponent,
     GamesNewsComponent,
     GamesLegacyComponent,
-    CardsComponentComponent
+    CardsComponentComponent,
+    CareersOpportunitiesComponent,
+    CareersLifeAtComponent,
+    CareersBenefitsComponent,
+    CareersAwardsComponent,
+    CareersContactComponent,
+    NewsMainContentComponent,
+    NewsFeaturedArticleComponent,
+    NewsRecentComponent,
+    NewsCategoriesComponent
   ],
   imports: [
     BrowserModule,
