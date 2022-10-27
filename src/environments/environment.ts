@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    projectId: 'insomniac-games-app',
+    appId: '1:314711490464:web:89f92a20cc01a7a4d76ec5',
+    databaseURL: 'https://insomniac-games-app-default-rtdb.firebaseio.com',
+    storageBucket: 'insomniac-games-app.appspot.com',
+    apiKey: 'AIzaSyC7_gmEwXHGtmZOweWZijkVc1bLgx5DoUw',
+    authDomain: 'insomniac-games-app.firebaseapp.com',
+    messagingSenderId: '314711490464',
+  }
 };
 
 /*

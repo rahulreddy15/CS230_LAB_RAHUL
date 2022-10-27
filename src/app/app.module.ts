@@ -33,6 +33,10 @@ import { NewsMainContentComponent } from './news-main-content/news-main-content.
 import { NewsFeaturedArticleComponent } from './news-featured-article/news-featured-article.component';
 import { NewsRecentComponent } from './news-recent/news-recent.component';
 import { NewsCategoriesComponent } from './news-categories/news-categories.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -70,7 +74,10 @@ import { NewsCategoriesComponent } from './news-categories/news-categories.compo
     BrowserModule,
     AppRoutingModule,
     YouTubePlayerModule,
-    HttpClientModule
+    HttpClientModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideDatabase(() => getDatabase()),
+    provideFirestore(() => getFirestore())
   ],
   providers: [],
   bootstrap: [AppComponent]

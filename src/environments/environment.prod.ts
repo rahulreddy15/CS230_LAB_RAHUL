@@ -1,5 +1,14 @@
 export const environment = {
-  production: true
+  production: true,
+  firebase: {
+    projectId: 'insomniac-games-app',
+    appId: '1:314711490464:web:89f92a20cc01a7a4d76ec5',
+    databaseURL: 'https://insomniac-games-app-default-rtdb.firebaseio.com',
+    storageBucket: 'insomniac-games-app.appspot.com',
+    apiKey: 'AIzaSyC7_gmEwXHGtmZOweWZijkVc1bLgx5DoUw',
+    authDomain: 'insomniac-games-app.firebaseapp.com',
+    messagingSenderId: '314711490464',
+  }
 };
 
 // Import the functions you need from the SDKs you need
