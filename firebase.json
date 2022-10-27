@@ -1,6 +1,10 @@
 {
   "hosting": {
     "public": "dist/cs230-project",
+    "rewrites": [{
+      "source": "**",
+      "destination": "/index.html"
+    }],
     "ignore": [
       "firebase.json",
       "**/.*",
