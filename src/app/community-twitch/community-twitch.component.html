@@ -1,0 +1,60 @@
+<script src="https://player.twitch.tv/js/embed/v1.js"></script>
+<div id="community-twitch-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <h2 class="dark">Meet The Team On Twitch</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col xl8 l7 m12 s12">
+        <div id="twitchcontainer" class="video-container"></div>
+      </div>
+
+      <div class="col xl4 l5 m12 s12">
+        <div class="card">
+          <div class="twitch-videos-wrapper">
+            <img
+              src="https://insomniacgames.wpenginepowered.com/wp-content/themes/insomniacgames/images/twitch-latest-videos.png"
+            />
+            <a
+              class="twitch-item"
+              data-title="Hot Wing Mario Kart Challenge!"
+              data-id="v220209005"
+              >Hot Wing Mario Kart Challenge!</a
+            >
+            <a
+              class="twitch-item"
+              data-title="Spider-Man Q&A with creative director Bryan Intihar"
+              data-id="v220207668"
+              >Spider-Man Q&A with creative director Bryan Intihar</a
+            >
+            <a
+              class="twitch-item"
+              data-title="PUBG - goin for the chicken dinner with CEO Ted Price"
+              data-id="V220210477"
+              >PUBG - goin for the chicken dinner with CEO Ted Price</a
+            >
+            <a
+              class="twitch-item"
+              data-title="Resistance 3 with creative director Marcus Smith"
+              data-id="v220212643"
+              >Resistance 3 with creative director Marcus Smith</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+  var options = {
+    autoplay: false,
+    width: 854,
+    height: 480,
+    video: "v220209005",
+  };
+
+  var twitchplayer = new Twitch.Player("twitchcontainer", options);
+  twitchplayer.setVolume(0);
+</script>

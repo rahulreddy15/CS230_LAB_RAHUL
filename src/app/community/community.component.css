@@ -1,0 +1,14 @@
+.container .row {
+  margin-left: -0.75rem;
+  margin-right: -0.75rem;
+}
+
+@media only screen and (min-width: 993px) {
+  .row .col.l8 {
+    width: 66.6666666667%;
+  }
+}
+
+.row .col.l8 {
+  flex: 1 0 66.6666666667%;
+}

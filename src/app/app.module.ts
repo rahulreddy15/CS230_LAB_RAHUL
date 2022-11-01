@@ -37,6 +37,10 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { CommunityJoinInComponent } from './community-join-in/community-join-in.component';
+import { CommunityTwitchComponent } from './community-twitch/community-twitch.component';
+import { CommunityNewsComponent } from './community-news/community-news.component';
+import { CommunityFollowLatestComponent } from './community-follow-latest/community-follow-latest.component';
 
 @NgModule({
   declarations: [
@@ -68,7 +72,11 @@ import { provideFirestore,getFirestore } from '@angular/fire/firestore';
     NewsMainContentComponent,
     NewsFeaturedArticleComponent,
     NewsRecentComponent,
-    NewsCategoriesComponent
+    NewsCategoriesComponent,
+    CommunityJoinInComponent,
+    CommunityTwitchComponent,
+    CommunityNewsComponent,
+    CommunityFollowLatestComponent
   ],
   imports: [
     BrowserModule,
