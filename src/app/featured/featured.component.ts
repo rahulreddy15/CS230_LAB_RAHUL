@@ -9,19 +9,23 @@ import { TitleModel } from './title.model';
 })
 export class FeaturedComponent implements OnInit {
   
-  featured: TitleModel[] = []
+  featured: any = []
   
   constructor(private featuredService: FeaturedService) {
   }
 
   ngOnInit(): void {
-    this.featuredService.getTitles().subscribe((data: TitleModel[]) => {
-      console.log("Fetching titles")
-      console.log(data)
-      for(var x of data){
-        console.log(x)
-        this.featured.push(x)
-      }
+    this.featuredService.getTitlesDB().snapshotChanges().subscribe((data) => {
+      data.forEach((title) => {
+        let a = title.payload.toJSON();
+        this.featured.push(a as TitleModel)
+      })
+      // console.log("Fetching titles")
+      // console.log(data)
+      // for(var x of data){
+      //   console.log(x)
+      //   this.featured.push(x)
+      // }
     })
   }
 

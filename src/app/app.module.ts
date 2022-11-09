@@ -33,14 +33,16 @@ import { NewsMainContentComponent } from './news-main-content/news-main-content.
 import { NewsFeaturedArticleComponent } from './news-featured-article/news-featured-article.component';
 import { NewsRecentComponent } from './news-recent/news-recent.component';
 import { NewsCategoriesComponent } from './news-categories/news-categories.component';
-import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
-import { provideDatabase,getDatabase } from '@angular/fire/database';
-import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 import { CommunityJoinInComponent } from './community-join-in/community-join-in.component';
 import { CommunityTwitchComponent } from './community-twitch/community-twitch.component';
 import { CommunityNewsComponent } from './community-news/community-news.component';
 import { CommunityFollowLatestComponent } from './community-follow-latest/community-follow-latest.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { FeaturedService } from './featured/featured.service';
+import { AddTitleComponent } from './add-title/add-title.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -76,18 +78,19 @@ import { CommunityFollowLatestComponent } from './community-follow-latest/commun
     CommunityJoinInComponent,
     CommunityTwitchComponent,
     CommunityNewsComponent,
-    CommunityFollowLatestComponent
+    CommunityFollowLatestComponent,
+    AddTitleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     YouTubePlayerModule,
     HttpClientModule,
-    provideFirebaseApp(() => initializeApp(environment.firebase)),
-    provideDatabase(() => getDatabase()),
-    provideFirestore(() => getFirestore())
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireDatabaseModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [FeaturedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

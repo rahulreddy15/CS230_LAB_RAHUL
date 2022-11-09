@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-8">
+      <form #postForm="ngForm" (ngSubmit)="addTitle(postForm.value)">
+        <div class="input-group">
+          <span class="input-group-text"> Title </span>
+          <input type="text" class="form-control" ngModel name="name" />
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-text"> Image Source </span>
+          <input type="text" class="form-control" ngModel name="img" />
+        </div>
+
+        <div class="input-group">
+          <span class="input-group-text"> Message </span>
+          <input type="text" class="form-control" ngModel name="message" />
+        </div>
+
+        <button class="btn btn-light" type="submit">Add Title</button>
+      </form>
+    </div>
+  </div>
+</div>
