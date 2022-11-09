@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AuthComponent } from './auth/auth.component';
 import { CareersComponent } from './careers/careers.component';
 import { CommunityComponent } from './community/community.component';
 import { GamesComponent } from './games/games.component';
@@ -8,6 +9,9 @@ import { NewsComponent } from './news/news.component';
 import { SupportComponent } from './support/support.component';
 
 const routes: Routes = [
+  {
+    path: "auth", component: AuthComponent
+  },
   {
     path: "", redirectTo: '/home', pathMatch: "full"
   },

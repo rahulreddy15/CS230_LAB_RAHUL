@@ -43,6 +43,7 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { FeaturedService } from './featured/featured.service';
 import { AddTitleComponent } from './add-title/add-title.component';
 import { FormsModule } from '@angular/forms';
+import { AuthComponent } from './auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -79,7 +80,8 @@ import { FormsModule } from '@angular/forms';
     CommunityTwitchComponent,
     CommunityNewsComponent,
     CommunityFollowLatestComponent,
-    AddTitleComponent
+    AddTitleComponent,
+    AuthComponent
   ],
   imports: [
     BrowserModule,
